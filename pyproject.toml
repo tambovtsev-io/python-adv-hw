@@ -5,3 +5,12 @@ description = "Python HW"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = ["fire>=0.7.0"]
+
+[project.scripts]
+nl = "hw01_CLI.nl:nl_cli"
+tail = "hw01_CLI.tail:tail_cli"
+wc = "hw01_CLI.wc:wc_cli"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
