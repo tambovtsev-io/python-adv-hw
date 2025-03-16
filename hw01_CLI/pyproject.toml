@@ -7,9 +7,12 @@ requires-python = ">=3.12"
 dependencies = ["fire>=0.7.0"]
 
 [project.scripts]
-nl = "hw01_CLI.nl:nl_cli"
-tail = "hw01_CLI.tail:tail_cli"
-wc = "hw01_CLI.wc:wc_cli"
+nl = "nl:nl_cli"
+tail = "tail:tail_cli"
+wc = "wc:wc_cli"
+
+[tool.setuptools]
+packages = ["src"]
 
 [build-system]
 requires = ["setuptools"]
