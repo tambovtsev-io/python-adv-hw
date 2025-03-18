@@ -1,5 +1,5 @@
 [project]
-name = "python-course"
+name = "hw01-cli"
 version = "0.1.0"
 description = "Python HW"
 readme = "README.md"
@@ -7,9 +7,9 @@ requires-python = ">=3.12"
 dependencies = ["fire>=0.7.0"]
 
 [project.scripts]
-nl = "nl:nl_cli"
-tail = "tail:tail_cli"
-wc = "wc:wc_cli"
+nl = "src.nl:nl_cli"
+tail = "src.tail:tail_cli"
+wc = "src.wc:wc_cli"
 
 [tool.setuptools]
 packages = ["src"]
