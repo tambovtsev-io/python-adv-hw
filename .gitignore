@@ -1,3 +1,6 @@
+# Project
+*.aux
+
 # Mac OS-specific storage files
 .DS_Store
 
@@ -35,6 +38,7 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+*.pypirc
 
 # PyInstaller
 #  Usually these files are written by a python script from a template

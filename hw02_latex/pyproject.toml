@@ -1,0 +1,24 @@
+[project]
+name = "hw02-latex"
+version = "0.1.4"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+generate_latex = "latexgen.generate_latex:main"
+
+[dependency-groups]
+dev = [
+    "black>=25.1.0",
+ "isort>=6.0.1",
+ "twine>=6.1.0",
+]
+
+[tool.setuptools]
+packages = ["latexgen", "latexgen.elements"]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"

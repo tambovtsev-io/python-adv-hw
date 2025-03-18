@@ -1,0 +1,8 @@
+services:
+  generate_latex:
+    build: .
+    volumes:
+      - ./latexgen:/workdir/latexgen
+      - ./pyproject.toml:/workdir/pyproject.toml
+      - ./artifacts:/workdir/artifacts
+    command: ["generate_latex"]

@@ -1,0 +1,17 @@
+[project]
+name = "hw02-test"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "hw02-latex>=0.1.4",
+]
+
+
+[tool.uv.sources]
+hw02-latex = { index = "testpypi" }
+
+[[tool.uv.index]]
+name = "testpypi"
+url = "https://test.pypi.org/simple/"
