@@ -1,5 +1,7 @@
 # HW02 Latex
 
+Ссыдлка на PyPI: [test.pypi.org/hw02-latex](https://test.pypi.org/project/hw02-latex/)
+
 ## Запуск
 - Для запуска через установку пакета см `../hw02_test`
 - Для запуска через docker: `docker compose up`
