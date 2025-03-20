@@ -1,4 +1,4 @@
-from functools import reduce, wraps
+from functools import wraps
 from typing import Any, Callable, List, Literal, Union
 
 DATA_TYPE = List[List[Union[str, int, float]]]
@@ -22,24 +22,13 @@ def latex_table_env(func: Callable) -> Callable:
     return wrapper
 
 
-def escape_latex(text: str) -> str:
-    """Function to escape Latex special characters"""
-    replacements = [
-        ("_", "\\_"),
-        ("%", "\\%"),
-        ("&", "\\&"),
-        ("#", "\\#"),
-    ]
-    return reduce(lambda s, kv: s.replace(kv[0], kv[1]), replacements, str(text))
-
-
 def format_row(row: List[Any]) -> str:
-    """Pure function to format a single row"""
-    return " & ".join(map(escape_latex, row)) + " \\\\"
+    """Function to format a single row"""
+    return " & ".join(map(str, row)) + " \\\\"
 
 
 def generate_tabular(data: DATA_TYPE, alignment: Literal["c", "l", "r"] = "c") -> str:
-    """Pure function to generate tabular environment"""
+    """Function to generate tabular environment"""
 
     if not data or not data[0]:
         return ""

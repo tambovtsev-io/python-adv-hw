@@ -3,6 +3,7 @@ from typing import Callable
 
 
 def latex_figure_env(func: Callable) -> Callable:
+    """Decorator for Latex figure environment"""
     @wraps(func)
     def wrapper(*args, **kwargs) -> str:
         return "\n".join(
