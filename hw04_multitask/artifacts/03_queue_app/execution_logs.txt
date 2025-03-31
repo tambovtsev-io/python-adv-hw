@@ -1,0 +1,31 @@
+Enter message (or 'quit' to quit):
+hello
+2025-03-31 13:22:54,761 - INFO - Main process sending: hello
+Enter message (or 'quit' to quit):
+x
+2025-03-31 13:22:55,373 - INFO - Main process sending: x
+Enter message (or 'quit' to quit):
+x
+2025-03-31 13:22:55,833 - INFO - Main process sending: x
+Enter message (or 'quit' to quit):
+x
+2025-03-31 13:22:56,215 - INFO - Main process sending: x
+Enter message (or 'quit' to quit):
+x
+2025-03-31 13:22:56,820 - INFO - Main process sending: x
+Enter message (or 'quit' to quit):
+2025-03-31 13:22:59,789 - INFO - Process A sending: hello
+2025-03-31 13:22:59,791 - INFO - Process B encoded (ROT13): uryyb
+2025-03-31 13:22:59,792 - INFO - Main process received: uryyb
+2025-03-31 13:23:04,815 - INFO - Process A sending: x
+2025-03-31 13:23:04,816 - INFO - Process B encoded (ROT13): k
+2025-03-31 13:23:04,817 - INFO - Main process received: k
+2025-03-31 13:23:09,840 - INFO - Process A sending: x
+2025-03-31 13:23:09,840 - INFO - Process B encoded (ROT13): k
+2025-03-31 13:23:09,841 - INFO - Main process received: k
+2025-03-31 13:23:14,849 - INFO - Process A sending: x
+2025-03-31 13:23:14,850 - INFO - Process B encoded (ROT13): k
+2025-03-31 13:23:14,851 - INFO - Main process received: k
+2025-03-31 13:23:19,865 - INFO - Process A sending: x
+2025-03-31 13:23:19,866 - INFO - Process B encoded (ROT13): k
+2025-03-31 13:23:19,867 - INFO - Main process received: k

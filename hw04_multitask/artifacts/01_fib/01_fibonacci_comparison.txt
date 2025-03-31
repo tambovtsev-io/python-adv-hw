@@ -1,0 +1,5 @@
+Comparison of Multiprocessing Methods (n=32, runs=10):
+------------------------------------------------------------
+Synchronous execution time: 7.2 seconds
+Threaded execution time: 10.4 seconds
+Multiprocess execution time: 1.94 seconds
